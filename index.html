@@ -1,0 +1,199 @@
+<!-- 
+  Quantum Astrology Website Template
+  Generated from the Genspark Prompt Analysis:
+  "Unlock Your Cosmic Blueprint – Transform energy shifts into personal breakthroughs"
+  This template incorporates a hero section, an interactive quiz introduction,
+  Gamma Cards for sneak peeks, and a lead capture form.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Astrology - Unlock Your Cosmic Blueprint</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- You can modify or add your custom CSS below or link to an external stylesheet as needed -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #0d0e1a;
+      color: #ffffff;
+    }
+    header.hero {
+      background: url('your-hero-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header.hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header.hero .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    header.hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header.hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    header.hero button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background: #f39c12;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #0d0e1a;
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .gamma-card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .gamma-card {
+      background: #1a1a2e;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .gamma-card:hover {
+      transform: scale(1.05);
+    }
+    .gamma-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .gamma-card a.card-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #f39c12;
+      border-radius: 5px;
+      color: #0d0e1a;
+      text-decoration: none;
+    }
+    form input[type="email"] {
+      padding: 1rem;
+      width: 60%;
+      max-width: 300px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 1rem;
+    }
+    form button {
+      padding: 1rem 2rem;
+      background: #f39c12;
+      border: none;
+      border-radius: 5px;
+      color: #0d0e1a;
+      cursor: pointer;
+    }
+    footer {
+      background: #0d0e1a;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    footer ul li a {
+      text-decoration: none;
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Unlock Your Cosmic Blueprint</h1>
+      <p>Transform energy shifts into personal breakthroughs</p>
+      <button>Get Started</button>
+    </div>
+  </header>
+
+  <!-- Quiz Section (Interactive entry point for personalized cosmic insights) -->
+  <section id="quiz">
+    <h2>Discover Your Cosmic Blueprint</h2>
+    <p>Take our quick cosmic quiz and get a sneak peek into your unique energy signature.</p>
+    <button>Start Quiz</button>
+  </section>
+
+  <!-- Gamma Cards Section (Sneak peeks into course modules) -->
+  <section id="gamma-cards">
+    <h2>Explore the Journey</h2>
+    <div class="gamma-card-grid">
+      <div class="gamma-card">
+        <img src="gamma1.jpg" alt="Gamma Card 1">
+        <p>Unlock your inner wisdom with cosmic insights.</p>
+        <a href="#module1" class="card-link">Learn More</a>
+      </div>
+      <div class="gamma-card">
+        <img src="gamma2.jpg" alt="Gamma Card 2">
+        <p>Embrace energy shifts as transformative moments.</p>
+        <a href="#module2" class="card-link">Learn More</a>
+      </div>
+      <!-- Add more Gamma Cards as needed -->
+    </div>
+  </section>
+
+  <!-- Lead Capture Section (Email signup to join the journey) -->
+  <section id="lead-capture">
+    <h2>Join the Cosmic Journey</h2>
+    <p>Subscribe for exclusive insights and early access to our Quantum Astrology course.</p>
+    <form action="MAILERLITE_FORM_ACTION_URL" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe Now</button>
+    </form>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Quantum Astrology</h2>
+    <p>Quantum Astrology is a journey of self-discovery. We reimagine astrological transits as catalysts for inner transformation rather than rigid predictions.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Quantum Astrology. All Rights Reserved.</p>
+    <ul>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
